@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour
 	[SerializeField] private float[] _startTorqueRange = new float[2] { -10f, 10f };
 
 	private ObjectPool<GameObject> _pool;
-	private WaitForSeconds _waitForSeconds = new WaitForSeconds(0.05f);
+	private WaitForSeconds _waitForSeconds = new WaitForSeconds(0.1f);
 
 	private void Awake()
 	{
