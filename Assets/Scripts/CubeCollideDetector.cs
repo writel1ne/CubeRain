@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 [RequireComponent(typeof(ColorSetter))]
 
-public class CollideDetector : MonoBehaviour
+public class CubeCollideDetector : MonoBehaviour
 {
 	private bool _coroutineIsRunning = false;
 	private Spawner _spawner;

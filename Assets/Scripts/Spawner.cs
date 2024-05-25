@@ -76,15 +76,6 @@ public class Spawner : MonoBehaviour
 	{
 		while (true)
 		{
-			var assembly = Assembly.GetAssembly(typeof(SceneView));
-			var type = assembly.GetType("UnityEditor.LogEntries");
-			var method = type.GetMethod("Clear");
-			method.Invoke(new object(), null);
-
-
-			Debug.Log("All = " + _pool.CountAll);
-			Debug.Log("Inactive = " + _pool.CountInactive);
-			Debug.Log("Active = " + _pool.CountActive);
 			_pool.Get();
 			yield return _waitForSeconds;
 		}
